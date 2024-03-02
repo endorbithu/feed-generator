@@ -88,16 +88,16 @@ Output:
 
 #### field_tag|opciók
 **FONTOS: Ha nem Eloquent model, hanem táblanév van megadva, akkor értelemszerűen method nevet nem tud feldolgozni**  
-- cdata `<![CDATA[...]]>` -ba teszi
-- required  (ha isStrict akkor error, ha !isStrict, akkor átugorja az aktuális elemet)
-- min:30 (ha isStrict akkor error, ha !isStrict, akkor átugorja az aktuális elemet)
-- max:100 (levágja a végét)
+- cdata - `<![CDATA[...]]>` -ba teszi
+- required -  (ha isStrict akkor error, ha !isStrict, akkor átugorja az aktuális elemet)
+- min:30 - (ha isStrict akkor error, ha !isStrict, akkor átugorja az aktuális elemet)
+- max:100 - (levágja a végét)
 - strip_tags
 - bool:ÉRTÉK_HA_FALSE:ÉRTÉK_HA_TRUE
-- datetime:FORMAT (lehet sima date típusú mező is, nem csak datetime)
-- number_format:paraméter2:paraméter3:paraméter4 (php number_format fg.)
+- datetime:FORMAT - (lehet sima date típusú mező is, nem csak datetime)
+- number_format:paraméter2:paraméter3:paraméter4 - (php number_format fg.)
 
-#### db_mezo + methodNeve() + 'custom string'
+#### db_mezo VS methodNeve() VS 'custom string'
 - `+` -val elválasztva: `"getUrl() + '?utm_source=talent'"`
 - ha van benne `()` akkor `$eloquentModel->methodNeve()` hívja meg, ha ez `object`-tel tér vissza, tehát pl `belongsTo()` akkor automatikusan `->first()->name`
 - ha szimpla idézőjelben van `'?utm_source=talent'` akkor azt simán hozzáfűzi stringként
