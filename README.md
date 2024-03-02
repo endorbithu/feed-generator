@@ -1,4 +1,4 @@
-# XML Feed Generátor
+# XML Feed Generátor (Laravel package)
 Eloquent model / DB table alapú XML feed generátor
 
 ### Példán keresztül az összes opció bemutatása
